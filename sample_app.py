@@ -7,7 +7,7 @@ def main():
     product1 = Product(10.0, "DIS_10_PRODUCT1", "product 1")
     product2 = Product(20.0, "DIS_10_PRODUCT2", "product 2")
 
-    products = [product1, product2]
+    products = []
 
     customer = Customer("A Customer")
 
@@ -15,7 +15,13 @@ def main():
 
     product3 = Product(30.0, "DIS_10_PRODUCT3", "product 3")
 
-    shopping_cart.add_product(product3)
+    # shopping_cart.add_product(product3)
+
+    product4 = Product(1000.0, "BULK_BUY_2_GET_1", "product 4")
+
+    shopping_cart.add_product(product4)
+    shopping_cart.add_product(product4)
+    shopping_cart.add_product(product4)
 
     print(shopping_cart)
 
